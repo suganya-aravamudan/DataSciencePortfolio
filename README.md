@@ -15,32 +15,44 @@
 
 2. Stock Data Pipeline: Yahoo Finance to MySQL                                                                                                                             
 This Python script is designed to fetch daily historical stock data from Yahoo Finance using the yfinance library and store it in a MySQL database. The script performs the following steps:
+
      1.	Data Extraction: 
-          •	Utilizes the yfinance library to fetch historical stock data for a specified symbol.
+          -	Utilizes the yfinance library to fetch historical stock data for a specified symbol.
      2.	Data Loading:
-          •	Inserts the fetched data into a MySQL database named "stock_app" in a table called "stock_data."
+          -	Inserts the fetched data into a MySQL database named "stock_app" in a table called "stock_data."
        	
 Prerequisites :
+
 Before running the script, ensure you have the following prerequisites:
-•	Python installed (version 3.6 or higher)
-•	yfinance library installed (pip install yfinance)
-•	mysql-connector-python library installed (pip install mysql-connector-python)
+-	Python installed (version 3.6 or higher)
+-	yfinance library installed (pip install yfinance)
+-	mysql-connector-python library installed (pip install mysql-connector-python)
 
 Configuration :
+
     1.	Replace the placeholder values in the script with your MySQL credentials:
+    
          pythonCopy code
+
          mysql_credentials = { "host": "localhost", "database": "stock_app", "user": "your_username", "password": "your_password", } 
+
     2.	Set the desired stock symbol in the script:
+    
          pythonCopy code
+         
          stock_symbol = "AAPL" 
          
 Running the Script :
-Execute the script by running the following command in the terminal or command prompt:
-bashCopy code --->      python script_name.py 
-Make sure to replace "script_name.py" with the actual name of your Python script.
+
+- Execute the script by running the following command in the terminal or command prompt:
+bashCopy code --->     
+python script_name.py 
+
+- Make sure to replace "script_name.py" with the actual name of your Python script.
 
 Output :
 The script will output messages indicating the progress and status of data fetching and insertion. If successful, it will print
+
  "Data inserted successfully."
 
 
