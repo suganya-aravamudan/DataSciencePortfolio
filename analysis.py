@@ -8,8 +8,8 @@ def fetch_stock_prices(symbol):
         connection = mysql.connector.connect(
             host="localhost",
             database="stock_app",
-            user="student",
-            password="student",
+            user= <db_username>,
+            password=<db_password>,
         )
         if connection.is_connected():
             cursor = connection.cursor(dictionary=True)
@@ -41,8 +41,8 @@ def main():
     mysql_credentials = {
         "host": "localhost",
         "database": "stock_app",
-        "user": "student",
-        "password": "student",
+        "user"= <db_username>,
+        "password" =<db_password>,
     }
 
     # Replace with the path to your Excel file
