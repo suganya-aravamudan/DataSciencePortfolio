@@ -56,6 +56,7 @@ The script will output messages indicating the progress and status of data fetch
  "Data inserted successfully."
 
  3. Stock Data Visualization
+    
 Description:
     
 This Python script interacts with Yahoo Finance and MySQL to fetch historical stock data, store it in a database, and generate individual plots for the closing prices of multiple stocks. The data is fetched from Yahoo Finance using the yfinance library, and the stock data is stored in a MySQL database. The generated plots are saved as separate images for each stock.
@@ -91,6 +92,9 @@ Note:
 -  The script saves individual stock plots with filenames in the format <symbol>_plot.png in the current working directory.
 -	Adjust the MySQL and Excel file details as needed.
 -	Make sure to comply with Yahoo Finance's terms of service when using their data.
+-  I have attached sample image of "GOOGLE" stock for reference.
+
+
 
 
 
