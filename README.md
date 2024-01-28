@@ -55,5 +55,43 @@ The script will output messages indicating the progress and status of data fetch
 
  "Data inserted successfully."
 
+ 3. Stock Data Visualization
+Description:
+    
+This Python script interacts with Yahoo Finance and MySQL to fetch historical stock data, store it in a database, and generate individual plots for the closing prices of multiple stocks. The data is fetched from Yahoo Finance using the yfinance library, and the stock data is stored in a MySQL database. The generated plots are saved as separate images for each stock.
+
+Usage:
+
+- Install Required Libraries:
+- Ensure that you have the required Python libraries installed. You can install them using the following command:
+Copy code :
+         pip install yfinance mysql-connector-python pandas matplotlib
+  
+MySQL Database Setup:
+   
+-	Set up a MySQL database named stock_app.
+-	Replace the placeholder values <db_username> and <db_password> in the script with your actual MySQL credentials.
+
+Excel File:
+-	Create an Excel file named stocks.xlsx with a column named "Symbol" containing the stock symbols you want to analyze.
+  
+Run the Script:
+-	Execute the script using the following command:
+Copy code :
+         python script_name.py
+
+-	Replace script_name.py with the actual filename of your Python script.
+  
+Troubleshooting:
+-	If you encounter MySQL connection issues, verify that your MySQL server is running, and your credentials are correct.
+-	Ensure that the required Python libraries are installed. Use the pip install command mentioned in step 1 to install any missing libraries.
+-	Check for typos or formatting issues in your Excel file.
+  
+Note:
+-  The script saves individual stock plots with filenames in the format <symbol>_plot.png in the current working directory.
+-	Adjust the MySQL and Excel file details as needed.
+-	Make sure to comply with Yahoo Finance's terms of service when using their data.
+
+
 
     
